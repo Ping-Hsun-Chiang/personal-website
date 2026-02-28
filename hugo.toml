@@ -30,14 +30,13 @@ imageWidth = 120
 imageHeight = 120
 
 
-# 作品按鈕連結，還沒做，先屏蔽
-# [[params.profileMode.buttons]]
-# name = '專案作品 (Projects)'
-# url = '#projects'
+[[params.profileMode.buttons]]
+name = 'GitHub ↗'
+url = 'https://github.com/Ping-Hsun-Chiang'
 
-# [[params.profileMode.buttons]]
-# name = 'GitHub ↗'
-# url = 'https://github.com/Ping-Hsun-Chiang'
+[[params.profileMode.buttons]]
+name = 'Linkedin ↗'
+url = '123'
 
 
 [[params.skills]]
