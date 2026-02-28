@@ -148,3 +148,21 @@ label = 'Tainan City, Taiwan'
     name = '聯絡'
     url = '/#contact'
     weight = 5
+
+
+[[menu.main]]
+  name = '☰'
+  url = '#'
+  weight = 10
+  
+  [[menu.main]]
+    name = '📝 文章'
+    url = '/posts/'
+    parent = '☰'
+    weight = 1
+
+  [[menu.main]]
+    name = '🖼 相簿'
+    url = '/gallery/'
+    parent = '☰'
+    weight = 2
