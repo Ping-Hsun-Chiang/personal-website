@@ -73,7 +73,11 @@
         {{ range . }}
         <div class="contact-row">
           <span class="contact-icon">{{ .icon }}</span>
+          {{ if .url }}
           <a href="{{ .url }}" {{ if hasPrefix .url "http" }}target="_blank" rel="noopener"{{ end }}>{{ .label }}</a>
+          {{ else }}
+          <span>{{ .label }}</span>
+          {{ end }}
         </div>
         {{ end }}
       </section>
@@ -103,22 +107,20 @@
       {{ with .Site.Params.projects }}
       <section class="resume-section" id="projects">
         <h2 class="section-title">專案 Projects</h2>
-        <div class="projects-grid">
-          {{ range . }}
-          <div class="project-card">
-            <div class="project-header">
-              <h3>{{ .name }}</h3>
-              {{ with .url }}<a href="{{ . }}" target="_blank" rel="noopener" class="project-link">↗</a>{{ end }}
-            </div>
-            <p>{{ .desc }}</p>
-            {{ with .tags }}
-            <div class="skill-tags">
-              {{ range . }}<span class="skill-tag">{{ . }}</span>{{ end }}
-            </div>
-            {{ end }}
+        {{ range . }}
+        <div class="project-list-item">
+          <div class="project-list-header">
+            <h3>{{ .name }}</h3>
+            {{ with .url }}<a href="{{ . }}" target="_blank" rel="noopener" class="project-link">↗</a>{{ end }}
+          </div>
+          <p>{{ .desc }}</p>
+          {{ with .tags }}
+          <div class="skill-tags">
+            {{ range . }}<span class="skill-tag">{{ . }}</span>{{ end }}
           </div>
           {{ end }}
         </div>
+        {{ end }}
       </section>
       {{ end }}
 

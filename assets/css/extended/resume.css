@@ -345,3 +345,46 @@
 .dark .resume-hero { border-left-color: #e2e8f0; }
 .dark .hero-avatar img { border-color: #e2e8f0; }
 .dark .section-title { color: #f1f5f9; border-bottom-color: #475569; }
+
+/* ── Project List ────────────────────────────────────────────── */
+.project-list-item {
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--resume-border);
+}
+
+.project-list-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.project-list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.4rem;
+}
+
+.project-list-header h3 {
+  font-size: 0.93rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.project-list-item p {
+  font-size: 0.84rem;
+  color: var(--resume-text-muted);
+  margin: 0 0 0.5rem;
+  line-height: 1.6;
+}
+
+
+.page-header,
+.post-header,
+body > main,
+.main,
+body .main,
+body main.main {
+  max-width: 100% !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
