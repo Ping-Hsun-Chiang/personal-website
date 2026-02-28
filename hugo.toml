@@ -121,3 +121,30 @@ label = 'andrew501228@gmail.com'
 [[params.contact]]
 icon = '📍'
 label = 'Tainan City, Taiwan'
+
+
+[menu]
+  [[menu.main]]
+    name = 'About me'
+    url = '/#about'
+    weight = 1
+
+  [[menu.main]]
+    name = '技能'
+    url = '/#skills'
+    weight = 2
+
+  [[menu.main]]
+    name = '經歷'
+    url = '/#experience'
+    weight = 3
+
+  [[menu.main]]
+    name = '專案'
+    url = '/#projects'
+    weight = 4
+
+  [[menu.main]]
+    name = '聯絡'
+    url = '/#contact'
+    weight = 5
