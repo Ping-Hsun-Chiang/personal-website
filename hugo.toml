@@ -23,7 +23,7 @@ about = '''
 
 [params.profileMode]
 enabled = true
-title = '您好，我是 姜秉勳'
+title = '姜秉勳 Ping-Hsun Chiang'
 subtitle = '專注於空間統計與機器學習預測模型的資料分析。擁有扎實的 Python 程式開發底子，靈活運用深度學習框架，將傳統與現代統計方法做結合。'
 imageUrl = '/fig.jpg'
 imageWidth = 120
@@ -104,6 +104,10 @@ tags = ['Python', 'pandas', 'Visualization']
 
 
 [[params.contact]]
+icon = '📱'
+label = '0934-343-515'
+
+[[params.contact]]
 icon = '📧'
 label = 'andrew501228@gmail.com'
 
@@ -114,4 +118,4 @@ url = 'https://github.com/Ping-Hsun-Chiang'
 
 [[params.contact]]
 icon = '📍'
-label = 'Tainan'
+label = 'Tainan City, Taiwan'
