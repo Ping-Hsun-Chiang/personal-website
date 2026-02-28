@@ -1,0 +1,144 @@
+{{- define "main" }}
+<div class="resume-container">
+
+  {{/* ── HERO ─────────────────────────────────────────────── */}}
+  <section class="resume-hero">
+    <div class="hero-avatar">
+      {{ if .Site.Params.profileMode.imageUrl }}
+      <img src="{{ .Site.Params.profileMode.imageUrl }}" alt="avatar" width="120" height="120">
+      {{ else }}
+      <div class="avatar-placeholder"><span>PHC</span></div>
+      {{ end }}
+    </div>
+    <div class="hero-text">
+      <h1>{{ .Site.Params.profileMode.title | default .Site.Params.author }}</h1>
+      <p class="hero-subtitle">{{ .Site.Params.profileMode.subtitle }}</p>
+      <div class="hero-links">
+        {{ range .Site.Params.profileMode.buttons }}
+        <a href="{{ .url }}" class="btn" {{ if hasPrefix .url "http" }}target="_blank" rel="noopener"{{ end }}>{{ .name }}</a>
+        {{ end }}
+        {{ with .Site.Params.email }}
+        <a href="mailto:{{ . }}" class="btn btn-outline">✉ Email</a>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+
+  {{/* ── ABOUT（全寬，貼在 Hero 下方）────────────────────── */}}
+  {{ with .Site.Params.about }}
+  <section class="resume-section resume-about-full" id="about">
+    <h2 class="section-title">關於我 About</h2>
+    {{ . | markdownify }}
+  </section>
+  {{ end }}
+
+  {{/* ── 雙欄：左 Skills/Education/Contact，右 Experience/Projects/Awards */}}
+  <div class="resume-body">
+    <div class="resume-left">
+
+      {{ with .Site.Params.skills }}
+      <section class="resume-section" id="skills">
+        <h2 class="section-title">技能 Skills</h2>
+        {{ range . }}
+        <div class="skill-group">
+          <h3 class="skill-category">{{ .category }}</h3>
+          <div class="skill-tags">
+            {{ range .items }}<span class="skill-tag">{{ . }}</span>{{ end }}
+          </div>
+        </div>
+        {{ end }}
+      </section>
+      {{ end }}
+
+      {{ with .Site.Params.education }}
+      <section class="resume-section" id="education">
+        <h2 class="section-title">學歷 Education</h2>
+        {{ range . }}
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">{{ .date }}</span>
+            <h3>{{ .school }}</h3>
+            <p class="timeline-sub">{{ .degree }}</p>
+            {{ with .note }}<p class="timeline-note">{{ . }}</p>{{ end }}
+          </div>
+        </div>
+        {{ end }}
+      </section>
+      {{ end }}
+
+      {{ with .Site.Params.contact }}
+      <section class="resume-section" id="contact">
+        <h2 class="section-title">聯絡 Contact</h2>
+        {{ range . }}
+        <div class="contact-row">
+          <span class="contact-icon">{{ .icon }}</span>
+          <a href="{{ .url }}" {{ if hasPrefix .url "http" }}target="_blank" rel="noopener"{{ end }}>{{ .label }}</a>
+        </div>
+        {{ end }}
+      </section>
+      {{ end }}
+
+    </div>{{/* end resume-left */}}
+
+    <div class="resume-right">
+
+      {{ with .Site.Params.experience }}
+      <section class="resume-section" id="experience">
+        <h2 class="section-title">經歷 Experience</h2>
+        {{ range . }}
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">{{ .date }}</span>
+            <h3>{{ .title }}</h3>
+            <p class="timeline-sub">{{ .org }}</p>
+            {{ with .desc }}<p class="timeline-note">{{ . }}</p>{{ end }}
+          </div>
+        </div>
+        {{ end }}
+      </section>
+      {{ end }}
+
+      {{ with .Site.Params.projects }}
+      <section class="resume-section" id="projects">
+        <h2 class="section-title">專案 Projects</h2>
+        <div class="projects-grid">
+          {{ range . }}
+          <div class="project-card">
+            <div class="project-header">
+              <h3>{{ .name }}</h3>
+              {{ with .url }}<a href="{{ . }}" target="_blank" rel="noopener" class="project-link">↗</a>{{ end }}
+            </div>
+            <p>{{ .desc }}</p>
+            {{ with .tags }}
+            <div class="skill-tags">
+              {{ range . }}<span class="skill-tag">{{ . }}</span>{{ end }}
+            </div>
+            {{ end }}
+          </div>
+          {{ end }}
+        </div>
+      </section>
+      {{ end }}
+
+      {{ with .Site.Params.awards }}
+      <section class="resume-section" id="awards">
+        <h2 class="section-title">獎項 Awards</h2>
+        {{ range . }}
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">{{ .date }}</span>
+            <h3>{{ .name }}</h3>
+            {{ with .org }}<p class="timeline-sub">{{ . }}</p>{{ end }}
+          </div>
+        </div>
+        {{ end }}
+      </section>
+      {{ end }}
+
+    </div>{{/* end resume-right */}}
+  </div>{{/* end resume-body */}}
+</div>{{/* end resume-container */}}
+{{- end }}
