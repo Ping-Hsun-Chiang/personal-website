@@ -153,3 +153,9 @@ label = 'Tainan City, Taiwan'
     name = '🏐 鞋槓青年'
     url = '/volleyball-team/'
     weight = 10
+
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

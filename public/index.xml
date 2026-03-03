@@ -6,26 +6,28 @@
     <description>Recent content in Ping-Hsun Chiang on Welcome!</description>
     <generator>Hugo -- 0.157.0</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sun, 01 Mar 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>鞋槓青年</title>
       <link>http://localhost:1313/volleyball-team/</link>
-      <pubDate>Sun, 01 Mar 2026 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/volleyball-team/</guid>
       <description>&lt;h2 id=&#34;關於球隊&#34;&gt;關於球隊&lt;/h2&gt;
-&lt;p&gt;這裡寫球隊介紹&amp;hellip;&lt;/p&gt;
+&lt;p&gt;楊克武&lt;/p&gt;
 &lt;hr&gt;
-&lt;h2 id=&#34;20260301--第一場比賽&#34;&gt;2026/03/01 — 第一場比賽&lt;/h2&gt;
+&lt;h2 id=&#34;2026-超級大專系際盃-in-元智大學&#34;&gt;2026 超級大專系際盃 in 元智大學&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;對手：XXX 隊&lt;/li&gt;
-&lt;li&gt;比分：我方 XX — 對方 XX&lt;/li&gt;
+&lt;li&gt;日期：02/07 - 02/08&lt;/li&gt;
+&lt;li&gt;賽果：混排組 - 季軍&lt;/li&gt;
+&lt;li&gt;參賽人員：姜秉勳、許博凱、蔡行揚、游佳臻、張庭雯、王冠茵、辜瀞儀、謝昀倢&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;賽事描述&amp;hellip;&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;比賽照片&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/volleyball_team/2026%E8%B6%85%E5%A4%A7%E7%9B%83_%E9%A0%92%E7%8D%8E.jpg&#34;&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;20260315--第二場比賽&#34;&gt;2026/03/15 — 第二場比賽&lt;/h2&gt;
-&lt;p&gt;每次比完賽就往下加一個區塊&amp;hellip;&lt;/p&gt;</description>
+&lt;div class=&#34;vb-2col&#34;&gt;
+  &lt;img src=&#34;http://localhost:1313/volleyball_team/2026超大盃_頒獎.jpg&#34; alt=&#34;比賽1&#34;&gt;
+  &lt;img src=&#34;http://localhost:1313/volleyball_team/2026超大盃_擊掌.jpg&#34; alt=&#34;比賽2&#34;&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;img alt=&#34;比賽照片&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/volleyball_team/2026%E8%B6%85%E5%A4%A7%E7%9B%83_%E9%A0%92%E7%8D%8E.jpg&#34;&gt;
+&lt;img alt=&#34;比賽照片&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/volleyball_team/2026%E8%B6%85%E5%A4%A7%E7%9B%83_%E6%93%8A%E6%8E%8C.jpg&#34;&gt;&lt;/p&gt;
+&lt;hr&gt;</description>
     </item>
   </channel>
 </rss>

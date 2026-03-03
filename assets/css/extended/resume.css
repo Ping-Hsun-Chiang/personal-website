@@ -423,14 +423,41 @@ body main.main {
   margin-bottom: 2rem;
 }
 
-/* 圖片縮小置中 */
-.vb-content img {
-  display: block;
-  max-width: 600px;
+/* 共用：所有 vb- 容器內的圖片 */
+.vb-2col, .vb-3col, .vb-1-2 {
+  display: grid;
+  gap: 0.8rem;
+  margin: 1.5rem 0;
+}
+
+.vb-2col {
+  grid-template-columns: 1fr 1fr;
+}
+
+.vb-3col {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.vb-1-2 {
+  grid-template-columns: 2fr 1fr;
+}
+
+.vb-1-2-right {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 0.8rem;
+}
+
+/* 容器內圖片統一裁切高度 */
+.vb-2col img,
+.vb-3col img,
+.vb-1-2 img,
+.vb-1-2-right img {
   width: 100%;
-  height: auto;
-  margin: 1.5rem auto;
+  height: 250px;
+  object-fit: cover;
   border-radius: 8px;
+  margin: 0;
 }
 
 /* 每場比賽區塊 */
