@@ -149,20 +149,7 @@ label = 'Tainan City, Taiwan'
     url = '/#contact'
     weight = 5
 
-
-[[menu.main]]
-  name = '☰'
-  url = '#'
-  weight = 10
-  
   [[menu.main]]
-    name = '📝 文章'
-    url = '/posts/'
-    parent = '☰'
-    weight = 1
-
-  [[menu.main]]
-    name = '🖼 相簿'
-    url = '/gallery/'
-    parent = '☰'
-    weight = 2
+    name = '🏐 鞋槓青年'
+    url = '/volleyball-team/'
+    weight = 10

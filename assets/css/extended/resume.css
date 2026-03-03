@@ -388,3 +388,76 @@ body main.main {
   padding-left: 0 !important;
   padding-right: 0 !important;
 }
+
+
+/* ── 鞋槓青年頁面 ─────────────────────────────────────────── */
+.vb-container {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 2rem 2rem 4rem;
+}
+
+.vb-header {
+  margin-bottom: 2rem;
+}
+
+.vb-header h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0 0 0.3rem;
+}
+
+.vb-date {
+  color: var(--resume-text-muted);
+  font-size: 0.85rem;
+}
+
+/* 關於球隊區塊：置中 + 方框 */
+.vb-content h2:first-of-type + p,
+.vb-content .about-box {
+  background: var(--resume-card-bg);
+  border: 1px solid var(--resume-border);
+  border-radius: var(--resume-radius);
+  padding: 1.5rem 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* 圖片縮小置中 */
+.vb-content img {
+  display: block;
+  max-width: 600px;
+  width: 100%;
+  height: auto;
+  margin: 1.5rem auto;
+  border-radius: 8px;
+}
+
+/* 每場比賽區塊 */
+.vb-content h2 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 2rem 0 0.8rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 2px solid var(--resume-border);
+}
+
+.vb-content p {
+  line-height: 1.8;
+  margin-bottom: 0.8rem;
+}
+
+.vb-content ul {
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.vb-content li {
+  line-height: 1.8;
+}
+
+.vb-content hr {
+  border: none;
+  border-top: 1px solid var(--resume-border);
+  margin: 2rem 0;
+}
