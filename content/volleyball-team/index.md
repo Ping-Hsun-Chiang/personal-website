@@ -44,6 +44,16 @@ type: "volleyball-team"
 
 ---
 
+## 2025 羅東主委盃 in 宜蘭大學
+
+- 日期：09/21
+- 賽果：社會男子組 - 殿軍
+- 參賽人員：姜秉勳、魏冠杰、蔡宗岳、詹詠鈞、朱凱逸、湯皓翔、張顥耀、范廷育、陳泰鋐
+
+<img src="/volleyball_team/2025羅東主委盃_合照.jpg" style="width: 80%; max-width: 700px; display: block; margin: 0 auto;">
+
+---
+
 <!-- 
 單張大圖 
 <img src="/volleyball_team/photo.jpg" alt="描述">
