@@ -245,56 +245,13 @@
   line-height: 1.5;
 }
 
-/* ── Projects Grid ───────────────────────────────────────────── */
-.projects-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem;
-}
-
-@media (max-width: 860px) {
-  .projects-grid { grid-template-columns: 1fr; }
-}
-
-.project-card {
-  background: var(--resume-card-bg);
-  border: 1px solid var(--resume-border);
-  border-radius: var(--resume-radius);
-  padding: 1rem 1.2rem;
-  transition: border-color 0.2s, transform 0.2s;
-}
-
-.project-card:hover {
-  border-color: #111827;
-  transform: translateY(-2px);
-}
-
-.project-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin-bottom: 0.4rem;
-}
-
-.project-header h3 {
-  font-size: 0.9rem;
-  font-weight: 700;
-  margin: 0;
-}
-
+/* ── Project Link ────────────────────────────────────────────── */
 .project-link {
   color: var(--resume-accent) !important;
   font-size: 1.1rem;
   text-decoration: none !important;
   font-weight: 700;
   line-height: 1;
-}
-
-.project-card p {
-  font-size: 0.82rem;
-  color: var(--resume-text-muted);
-  margin: 0 0 0.6rem;
-  line-height: 1.5;
 }
 
 /* ── Contact ─────────────────────────────────────────────────── */

@@ -25,7 +25,7 @@ about = '''
 enabled = true
 title = '姜秉勳 Ping-Hsun Chiang'
 subtitle = '專注於空間統計與機器學習模型的資料預測分析。擁有扎實的統計理論背景與程式開發底子，並能靈活運用深度學習技術，將傳統與現代統計方法做結合。'
-imageUrl = '/fig.jpg'
+imageUrl = 'fig.jpg'
 imageWidth = 120
 imageHeight = 120
 
@@ -99,6 +99,12 @@ desc = '協助指導教授對當地學⽣進⾏基本統計程式語法教學'
 
 # ── Projects ──────────────────────────────────────────────────
 [[params.projects]]
+name = '寺廟網站建構'
+desc = '為臺南市下營區六興堂設計並建置廟宇官方網站，提供線上點燈、隨喜捐款、祈福等功能，後端串接 Google Apps Script 與 Google Sheets 進行資料儲存與 Email 通知。'
+url = 'https://ping-hsun-chiang.github.io/temple-website/'
+tags = ['HTML', 'CSS', 'JavaScript', 'Google Apps Script']
+
+[[params.projects]]
 name = '碩士論文'
 desc = '提出針對全球尺度大數據的 Spherical DeepKriging 空間預測架構。本研究結合薄板樣條 (TPS) 基底函數與神經網路，並導入Huber損失函數強化魯棒性，有效突破傳統克利金模型在計算成本與空間距離扭曲上的限制，預測表現顯著優於傳統泛克利金模型。'
 url = 'https://hdl.handle.net/11296/w533y6'
@@ -116,7 +122,7 @@ label = '0934-343-515'
 
 [[params.contact]]
 icon = '📧'
-label = 'andrew501228@gmail.com'
+label = 'andrewchiang228@gmail.com'
 
 [[params.contact]]
 icon = '📍'
@@ -126,27 +132,27 @@ label = 'Tainan City, Taiwan'
 [menu]
   [[menu.main]]
     name = 'About me'
-    url = '/#about'
+    url = '#about'
     weight = 1
 
   [[menu.main]]
     name = '技能'
-    url = '/#skills'
+    url = '#skills'
     weight = 2
 
   [[menu.main]]
     name = '經歷'
-    url = '/#experience'
+    url = '#experience'
     weight = 3
 
   [[menu.main]]
     name = '專案'
-    url = '/#projects'
+    url = '#projects'
     weight = 4
 
   [[menu.main]]
     name = '聯絡'
-    url = '/#contact'
+    url = '#contact'
     weight = 5
 
   [[menu.main]]

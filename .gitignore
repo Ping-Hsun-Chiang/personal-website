@@ -1,0 +1,9 @@
+# Hugo build output (GitHub Actions 自動建置，不需要 commit)
+public/
+
+# Hugo lock file
+.hugo_build.lock
+
+# OS files
+.DS_Store
+Thumbs.db
