@@ -1,4 +1,4 @@
-baseURL = 'https://Ping-Hsun-Chiang.github.io/'
+baseURL = "https://ping-hsun-chiang.github.io/personal-website/"
 languageCode = 'zh-tw'
 title = 'Welcome!'
 theme = 'PaperMod'
