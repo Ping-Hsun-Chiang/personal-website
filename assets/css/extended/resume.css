@@ -445,3 +445,402 @@ body main.main {
   border-top: 1px solid var(--resume-border);
   margin: 2rem 0;
 }
+
+/* ============================================================
+   Projects Timeline — 全寬時間線
+   ============================================================ */
+
+.resume-projects-full {
+  background: var(--resume-card-bg);
+  border: 1px solid var(--resume-border);
+  border-radius: var(--resume-radius);
+  padding: 1.6rem 2rem 0.8rem;
+  margin-top: 2rem;
+}
+
+.projects-subtitle {
+  font-size: 0.8rem;
+  color: var(--resume-text-muted);
+  margin: -0.5rem 0 1.8rem;
+  letter-spacing: 0.04em;
+}
+
+/* ── Timeline 容器 ──────────────────────────────────────────── */
+.proj-timeline {
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+/* ── 每一個專案項目 ──────────────────────────────────────────── */
+.proj-item {
+  display: flex;
+  gap: 1.2rem;
+  align-items: flex-start;
+}
+
+/* ── 左側時間軸柱 ────────────────────────────────────────────── */
+.proj-axis {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+  width: 18px;
+}
+
+.proj-dot {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: var(--resume-accent);
+  border: 2px solid var(--resume-accent);
+  flex-shrink: 0;
+  margin-top: 6px;
+  z-index: 1;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.proj-item:hover .proj-dot {
+  transform: scale(1.35);
+  box-shadow: 0 0 0 4px var(--resume-accent-light);
+}
+
+.proj-dot--private {
+  background: transparent;
+  border-color: var(--resume-text-muted);
+}
+
+.proj-item:hover .proj-dot--private {
+  box-shadow: 0 0 0 4px color-mix(in srgb, var(--resume-text-muted) 15%, transparent);
+}
+
+.proj-line {
+  width: 2px;
+  flex: 1;
+  min-height: 16px;
+  background: linear-gradient(to bottom, var(--resume-accent) 0%, var(--resume-border) 100%);
+  opacity: 0.35;
+  margin-top: 2px;
+}
+
+.proj-timeline-end {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--resume-border);
+  margin-left: 4px;
+  margin-top: 0;
+  margin-bottom: 0.6rem;
+}
+
+/* ── 右側卡片 ────────────────────────────────────────────────── */
+.proj-card {
+  flex: 1;
+  border: 1px solid var(--resume-border);
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+  margin-bottom: 1rem;
+  background: var(--theme);
+  transition: box-shadow 0.2s ease, transform 0.2s ease, border-color 0.2s ease;
+}
+
+.proj-card:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.07);
+  transform: translateY(-2px);
+  border-color: var(--resume-accent);
+}
+
+/* ── meta 列（日期 / Private badge / 連結）──────────────────── */
+.proj-meta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin-bottom: 0.4rem;
+}
+
+.proj-date {
+  font-size: 0.72rem;
+  font-family: var(--resume-font-mono);
+  color: var(--resume-text-muted);
+  letter-spacing: 0.05em;
+}
+
+.proj-badge {
+  font-size: 0.69rem;
+  padding: 1px 8px;
+  border-radius: 99px;
+  background: color-mix(in srgb, var(--resume-text-muted) 12%, transparent);
+  color: var(--resume-text-muted);
+  font-weight: 500;
+}
+
+.proj-extlink {
+  font-size: 0.72rem;
+  color: var(--resume-accent) !important;
+  text-decoration: none !important;
+  font-weight: 600;
+  margin-left: auto;
+  transition: opacity 0.15s;
+}
+
+.proj-extlink:hover { opacity: 0.75; }
+
+/* ── 專案名稱 ────────────────────────────────────────────────── */
+.proj-name {
+  font-size: 0.97rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin: 0 0 0.45rem;
+  line-height: 1.4;
+}
+
+/* ── 說明文字 ────────────────────────────────────────────────── */
+.proj-desc {
+  font-size: 0.83rem;
+  color: var(--resume-text-muted);
+  line-height: 1.72;
+  margin: 0 0 0.65rem;
+}
+
+/* ── Tags ────────────────────────────────────────────────────── */
+.proj-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.proj-tag {
+  font-size: 0.71rem;
+  padding: 2px 9px;
+  border-radius: 4px;
+  border: 1px solid var(--resume-border);
+  color: var(--resume-text-muted);
+  background: transparent;
+  font-weight: 600;
+  font-family: var(--resume-font-mono);
+  transition: background 0.15s, color 0.15s, border-color 0.15s;
+}
+
+.proj-tag:hover {
+  background: var(--resume-accent);
+  color: #fff;
+  border-color: var(--resume-accent);
+}
+
+/* ── 深色模式微調 ────────────────────────────────────────────── */
+.dark .proj-card {
+  background: var(--entry);
+}
+
+.dark .proj-card:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* ── 手機版 ──────────────────────────────────────────────────── */
+@media (max-width: 600px) {
+  .resume-projects-full {
+    padding: 1.2rem 1rem 0.6rem;
+  }
+  .proj-item {
+    gap: 0.8rem;
+  }
+  .proj-card {
+    padding: 0.85rem 1rem;
+  }
+  .proj-name {
+    font-size: 0.92rem;
+  }
+  .proj-extlink {
+    margin-left: 0;
+  }
+}
+
+
+/* ============================================================
+   Projects Timeline — Full Width
+   ============================================================ */
+
+.resume-projects-full {
+  margin-top: 2rem;
+}
+
+.proj-section-sub {
+  font-size: 0.8rem;
+  color: var(--resume-text-muted);
+  margin: -0.5rem 0 1.8rem;
+  letter-spacing: 0.04em;
+}
+
+/* ── Timeline wrapper ───────────────────────────────────────── */
+.proj-timeline {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ── Each row ───────────────────────────────────────────────── */
+.proj-item {
+  display: flex;
+  gap: 1.2rem;
+  align-items: flex-start;
+}
+
+/* ── Axis (dot + line) ──────────────────────────────────────── */
+.proj-axis {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+  width: 16px;
+  padding-top: 4px;
+}
+
+.proj-dot {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: var(--resume-accent);
+  border: 2px solid var(--resume-accent);
+  flex-shrink: 0;
+  z-index: 1;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.proj-item:hover .proj-dot {
+  transform: scale(1.35);
+  box-shadow: 0 0 0 4px var(--resume-accent-light);
+}
+
+.proj-dot--private {
+  background: transparent;
+  border-color: var(--resume-text-muted);
+}
+
+.proj-item:hover .proj-dot--private {
+  box-shadow: 0 0 0 4px var(--resume-border);
+}
+
+.proj-line {
+  width: 2px;
+  flex: 1;
+  min-height: 20px;
+  background: linear-gradient(to bottom, var(--resume-accent), transparent);
+  opacity: 0.2;
+  margin-top: 4px;
+}
+
+.proj-end-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--resume-border);
+  margin-left: 4px;
+  margin-top: 4px;
+}
+
+/* ── Card ───────────────────────────────────────────────────── */
+.proj-card {
+  flex: 1;
+  background: var(--resume-card-bg);
+  border: 1px solid var(--resume-border);
+  border-radius: var(--resume-radius);
+  padding: 1rem 1.3rem 1rem;
+  margin-bottom: 1.1rem;
+  transition: box-shadow 0.2s ease, transform 0.2s ease, border-color 0.2s ease;
+}
+
+.proj-item:hover .proj-card {
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.07);
+  transform: translateY(-2px);
+  border-color: var(--resume-accent);
+}
+
+/* ── Meta row (date / badge / link) ─────────────────────────── */
+.proj-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  margin-bottom: 0.4rem;
+  flex-wrap: wrap;
+}
+
+.proj-date {
+  font-size: 0.72rem;
+  font-family: var(--resume-font-mono);
+  color: var(--resume-text-muted);
+  letter-spacing: 0.05em;
+}
+
+.proj-badge {
+  font-size: 0.68rem;
+  padding: 1px 8px;
+  border-radius: 99px;
+  background: color-mix(in srgb, var(--resume-text-muted) 12%, transparent);
+  color: var(--resume-text-muted);
+  font-weight: 500;
+}
+
+.proj-ext-link {
+  font-size: 0.72rem;
+  color: var(--resume-accent) !important;
+  text-decoration: none !important;
+  font-weight: 600;
+  margin-left: auto;
+  transition: opacity 0.15s;
+}
+
+.proj-ext-link:hover { opacity: 0.75; }
+
+/* ── Project name ───────────────────────────────────────────── */
+.proj-name {
+  font-size: 0.97rem;
+  font-weight: 700;
+  color: var(--content);
+  margin: 0 0 0.45rem;
+  line-height: 1.4;
+}
+
+/* ── Description ────────────────────────────────────────────── */
+.proj-desc {
+  font-size: 0.84rem;
+  line-height: 1.72;
+  color: var(--resume-text-muted);
+  margin: 0 0 0.7rem;
+}
+
+/* ── Tags ───────────────────────────────────────────────────── */
+.proj-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.proj-tag {
+  font-size: 0.7rem;
+  padding: 2px 9px;
+  border-radius: 99px;
+  border: 1px solid var(--resume-border);
+  color: var(--resume-text-muted);
+  font-family: var(--resume-font-mono);
+  font-weight: 500;
+  transition: background 0.15s, color 0.15s, border-color 0.15s;
+}
+
+.proj-tag:hover {
+  background: var(--resume-accent);
+  color: #fff;
+  border-color: var(--resume-accent);
+}
+
+/* ── Dark mode adjustments ──────────────────────────────────── */
+.dark .proj-tag:hover {
+  color: #0f172a;
+}
+
+/* ── Mobile ─────────────────────────────────────────────────── */
+@media (max-width: 600px) {
+  .proj-item { gap: 0.75rem; }
+  .proj-card { padding: 0.85rem 1rem; }
+  .proj-name { font-size: 0.92rem; }
+  .proj-desc { font-size: 0.82rem; }
+}

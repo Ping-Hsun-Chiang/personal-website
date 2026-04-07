@@ -1,30 +1,29 @@
 baseURL = "https://ping-hsun-chiang.github.io/personal-website/"
 languageCode = 'zh-tw'
-title = 'Welcome!'
+title = 'Ping-Hsun Chiang | AI Engineer'
 theme = 'PaperMod'
 
 
 [params]
 author = '姜秉勳 Ping-Hsun Chiang'
-description = '國立東華大學統計碩士，專注於 Python、機器學習與空間模型預測。'
 ShowReadingTime = false
 ShowShareButtons = false
 ShowPostNavLinks = false
 disableThemeToggle = true
 defaultTheme = 'auto'
 about = '''
-我是國立東華大學統計碩士畢業生，對探索數據背後的隱藏規律充滿熱忱。我的專業揉合了嚴謹的統計分析思維與現代深度學習技術。
+國立東華大學統計碩士，專注於 **AI 模型設計與落地實作**。碩士期間提出 Spherical DeepKriging 空間預測架構，結合深度神經網路與球面基底函數，在全球尺度大數據場景下預測效能顯著超越傳統克利金模型。
 
-在學期間，我不僅深入研究空間統計與深度學習，更具備將理論落地的實戰經驗；亦曾主導花東運輸數據分析計畫，透過統計分析技術提供中心單位決策支援。
+具備完整的 AI 工程實作能力：以 TensorFlow/Keras 建置多標籤分類模型並實施滾動式回測驗證；開發 Python 自動化機器人整合 Meta Graph API，串接 Facebook、Instagram、Threads 三平台跨平台發文與自動回覆功能；獨立完成全端網頁建置，後端串接 Google Apps Script 實現表單資料收集與 Email 通知系統。
 
-我熟悉 Python 工具與 TensorFlow 等深度學習框架，能夠獨立完成從數據清洗、模型建構、統計檢定到資料視覺化的完整開發流程。我期待能將自身的統計理論與工程實作能力，貢獻於未來工作領域當中。
+熟悉從**資料清理 → 模型訓練 → 驗證評估 → 自動化部署**的完整開發流程，習慣在 Linux (WSL) 環境下進行工程開發。擅長將統計嚴謹度帶入機器學習實作，追求可解釋、可驗證的模型結果。
 '''
 
 
 [params.profileMode]
 enabled = true
 title = '姜秉勳 Ping-Hsun Chiang'
-subtitle = '專注於空間統計與機器學習模型的資料預測分析。擁有扎實的統計理論背景與程式開發底子，並能靈活運用深度學習技術，將傳統與現代統計方法做結合。'
+subtitle = 'AI 模型實作 ✦ 空間統計 ✦ 自動化工程 | 統計碩士 × 工程執行力'
 imageUrl = 'fig.jpg'
 imageWidth = 120
 imageHeight = 120
@@ -39,83 +38,127 @@ name = 'LinkedIn ↗'
 url = 'https://www.linkedin.com/in/andrew-chiang-a99a94321/'
 
 
+# ── Skills ────────────────────────────────────────────────────
 [[params.skills]]
 category = '程式語言'
-items = ['Python', 'R studio']
+items = ['Python', 'R', 'JavaScript', 'HTML / CSS', 'Bash']
 
 [[params.skills]]
-category = '機器學習框架'
-items = ['TensorFlow', 'Keras', 'Scikit-learn']
+category = 'AI / 機器學習框架'
+items = ['TensorFlow', 'Keras', 'Scikit-learn', 'JAX', 'XGBoost']
 
 [[params.skills]]
-category = '開發工具'
-items = ['Git', 'Linux', 'macOS']
+category = '資料處理與分析'
+items = ['NumPy', 'Pandas', 'Matplotlib', 'Seaborn', 'SQL']
 
 [[params.skills]]
-category = '專業領域'
-items = ['深度學習', '數據分析', '空間統計', '統計方法', '空間預測']
+category = '統計與建模'
+items = ['空間統計', '克利金模型', '非線性迴歸', '貝氏推論', '時間序列']
+
+[[params.skills]]
+category = '工程與開發工具'
+items = ['Git', 'Linux / WSL', 'Docker', 'Google Apps Script', 'REST API']
+
+[[params.skills]]
+category = '雲端 / 部署'
+items = ['GitHub Pages', 'Google Sheets API', 'Meta Graph API']
 
 
+# ── Education ─────────────────────────────────────────────────
 [[params.education]]
 date = '2023.07 — 2026.01'
 school = '國立東華大學 | 碩士'
-degree = '應⽤數學系 統計碩⼠班'
+degree = '應用數學系 統計碩士班｜論文：Spherical DeepKriging'
 
 [[params.education]]
-date = '2019.09 - 2023.06'
+date = '2019.09 — 2023.06'
 school = '國立東華大學 | 學士'
-degree = '應⽤數學系 統計科學組'
+degree = '應用數學系 統計科學組'
 
+
+# ── Experience ────────────────────────────────────────────────
+[[params.experience]]
+date = '2026.03 — 現在'
+title = '奕福穎科技股份有限公司 | AI 實習工程師'
+desc = '參與公司 AI 相關專案開發，負責模型實作與測試驗證工作。'
 
 [[params.experience]]
-date = '2026.03 - 現在'
-title = '奕福穎科技股份有限公司 | 實習生'
+date = '2025.10 — 2026.01'
+title = '經濟部 AI 新秀計畫 | 培訓人員'
+desc = '系統性學習生成式 AI、LLM 應用及 AI 工具鏈，完成多項實作任務與專案提案。'
 
 [[params.experience]]
-date = '2025.10 - 2026.01'
-title = '經濟部AI新秀計畫 | 培訓人員'
-desc = '學習各式AI工具並進行實作訓練'
+date = '2025.06 — 2025.07'
+title = '韓國首爾大學統計學系 | 國際交換研究生'
+desc = '與首爾大學空間統計研究室進行學術交流，探討大規模球面空間預測方法。'
 
 [[params.experience]]
-date = '2023.07 - 2026.01'
+date = '2025.05'
+title = '印尼 UNY 數學系 | 統計程式課程助教'
+desc = '協助指導教授對當地學生進行 R 語言統計程式教學，具備技術知識轉移與跨文化溝通能力。'
+
+[[params.experience]]
+date = '2023.07 — 2026.01'
 title = '東華空間統計研究室 | 研究助理'
-desc = '協助指導教授進⾏數據收集與實驗分析'
+desc = '主導 Spherical DeepKriging 模型設計與實驗，負責大規模氣象數據收集、前處理、基底函數建構及模型比較驗證，產出碩士論文並通過口試。'
 
 [[params.experience]]
-date = '2023.07 - 2026.01'
-title = '東部運輸中心 | 計劃負責人'
-desc = '透過統計分析技術，協助東部運輸數據分析，給予相關部門改善建議'
-
-[[params.experience]]
-date = '2025.06.20 - 2025.07.25'
-title = '韓國首爾大學統計學系 | 交換生'
-desc = '與⾸爾⼤學空間統計研究室進⾏研究交流'
-
-[[params.experience]]
-date = '2025.05.14 - 2025.05.22'
-title = '印尼 UNY 數學系 | 課程助教'
-desc = '協助指導教授對當地學⽣進⾏基本統計程式語法教學'
+date = '2023.07 — 2026.01'
+title = '東部運輸中心 | 計畫負責人'
+desc = '蒐集花東地區公共運輸資料，運用 R 語言進行統計分析與視覺化，產出報告並提供主管機關優化建議。'
 
 
 # ── Projects ──────────────────────────────────────────────────
 [[params.projects]]
-name = '寺廟網站建構'
-desc = '為臺南市下營區六興堂設計並建置廟宇官方網站，提供線上點燈、隨喜捐款、祈福等功能，後端串接 Google Apps Script 與 Google Sheets 進行資料儲存與 Email 通知。'
+date = '2026.01'
+name = 'shop-auto-bot｜跨平台社群自動化機器人'
+desc = '以 Python 串接 Meta Graph API，開發支援 Facebook、Instagram、Threads 三平台的自動發文與留言自動回覆系統。解決 Instagram Login Token 路由差異、Threads v1.0 API 版本兼容等工程問題，有效降低電商日常營運人力成本。'
+tags = ['Python', 'Meta Graph API', 'REST API', 'Automation']
+private = true
+
+[[params.projects]]
+date = '2025.12'
+name = 'lotto539_predictor｜今彩 539 深度學習預測系統'
+desc = '以 TensorFlow/Keras 建置多標籤分類神經網路，對台灣彩券歷史開獎資料進行增量式微調（Incremental Fine-tuning）訓練。實作 Walk-Forward 滾動式回測框架驗證模型穩健性，涵蓋資料蒐集、特徵工程、模型訓練至預測輸出的完整端到端 AI 工程流程。'
+tags = ['TensorFlow', 'Keras', 'Multi-label Classification', 'Walk-Forward Backtesting', 'Python']
+private = true
+
+[[params.projects]]
+date = '2025.06'
+name = 'temple-website｜六興堂寺廟官方網站'
+desc = '獨立設計並建置廟宇全端網站，實作線上點燈（多人表單生成、數量選擇器、五步驟確認付款流程）、隨喜捐款、祈福等功能模組。後端以 Google Apps Script 串接 Google Sheets 儲存資料並自動發送 Email 通知，部署於 GitHub Pages。'
 url = 'https://ping-hsun-chiang.github.io/temple-website/'
-tags = ['HTML', 'CSS', 'JavaScript', 'Google Apps Script']
+tags = ['HTML', 'CSS', 'JavaScript', 'Google Apps Script', 'Full-stack']
 
 [[params.projects]]
-name = '碩士論文'
-desc = '提出針對全球尺度大數據的 Spherical DeepKriging 空間預測架構。本研究結合薄板樣條 (TPS) 基底函數與神經網路，並導入Huber損失函數強化魯棒性，有效突破傳統克利金模型在計算成本與空間距離扭曲上的限制，預測表現顯著優於傳統泛克利金模型。'
-url = 'https://hdl.handle.net/11296/w533y6'
-tags = ['Statistical', 'Python', 'Deep Learning', 'Machine Learning']
+date = '2025.03'
+name = 'mahjong-record｜麻將戰績紀錄系統'
+desc = '以純前端技術建置即時麻將輸贏紀錄網頁，支援多玩家分數計算、場次管理與歷史戰績統計。展示在不依賴後端框架的情況下，僅用 HTML / CSS / JavaScript 實現完整的資料狀態管理與互動式 UI。'
+url = 'https://github.com/Ping-Hsun-Chiang/mahjong-record'
+tags = ['HTML', 'CSS', 'JavaScript', 'Frontend']
 
 [[params.projects]]
+date = '2024.09'
+name = 'personal-website｜個人履歷網站'
+desc = '以 Hugo 靜態網站生成器搭配 PaperMod 主題，客製化一頁式履歷網頁，包含技能、經歷、專案、聯絡等完整區塊。自行設計 Hugo Partial 模板、實作時間線 UI 與響應式排版，部署至 GitHub Pages 持續維護。'
+url = 'https://ping-hsun-chiang.github.io/personal-website/'
+tags = ['Hugo', 'HTML', 'CSS', 'GitHub Pages', 'Static Site']
+
+[[params.projects]]
+date = '2024.03'
 name = '東部運輸數據分析'
-desc = '蒐集與分析花東地區公共運輸資料，透過傳統統計分析技術進行敘述性統計，並提供中心單位進行各項優化改善方向。'
-tags = ['R studio', 'Descriptive Statistics', 'Visualization']
+desc = '蒐集並整合花東地區公共運輸資料，運用 R 語言進行資料清理、敘述性統計分析與多維度視覺化呈現，產出分析報告並提供主管機關具體優化建議，實際應用統計方法解決公共政策決策問題。'
+tags = ['R', 'Descriptive Statistics', 'Data Visualization', 'Public Policy']
+
+[[params.projects]]
+date = '2023.07'
+name = 'Spherical DeepKriging｜碩士論文'
+desc = '提出結合球面薄板樣條（TPS）基底函數與深度神經網路的全球尺度空間預測架構。導入 Huber 損失函數強化魯棒性，突破傳統克利金在百萬級資料點下的計算瓶頸，RMSE 顯著優於通用克利金（Universal Kriging）基準模型，成果已收錄於國立東華大學機構典藏。'
+url = 'https://hdl.handle.net/11296/w533y6'
+tags = ['TensorFlow', 'JAX', 'Python', 'Spatial Statistics', 'Deep Learning', 'Kriging']
 
 
+# ── Contact ───────────────────────────────────────────────────
 [[params.contact]]
 icon = '📱'
 label = '0934-343-515'
@@ -131,7 +174,7 @@ label = 'Tainan City, Taiwan'
 
 [menu]
   [[menu.main]]
-    name = 'About me'
+    name = 'About'
     url = '#about'
     weight = 1
 

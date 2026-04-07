@@ -24,7 +24,7 @@
     </div>
   </section>
 
-  {{/* ── ABOUT（全寬，貼在 Hero 下方）────────────────────── */}}
+  {{/* ── ABOUT ───────────────────────────────────────────── */}}
   {{ with .Site.Params.about }}
   <section class="resume-section resume-about-full" id="about">
     <h2 class="section-title">關於我 About</h2>
@@ -32,7 +32,7 @@
   </section>
   {{ end }}
 
-  {{/* ── 雙欄：左 Skills/Education/Contact，右 Experience/Projects/Awards */}}
+  {{/* ── 雙欄：左 Skills/Education/Contact，右 Experience */}}
   <div class="resume-body">
     <div class="resume-left">
 
@@ -104,43 +104,49 @@
       </section>
       {{ end }}
 
+      {{/* ── PROJECTS（全寬時間線）────────────────────────────── */}}
       {{ with .Site.Params.projects }}
-      <section class="resume-section" id="projects">
+      <section class="resume-section resume-projects-full" id="projects">
         <h2 class="section-title">專案 Projects</h2>
-        {{ range . }}
-        <div class="project-list-item">
-          <div class="project-list-header">
-            <h3>{{ .name }}</h3>
-            {{ with .url }}<a href="{{ . }}" target="_blank" rel="noopener" class="project-link">↗</a>{{ end }}
-          </div>
-          <p>{{ .desc }}</p>
-          {{ with .tags }}
-          <div class="skill-tags">
-            {{ range . }}<span class="skill-tag">{{ . }}</span>{{ end }}
+        <p class="proj-section-sub">端到端開發 · AI 模型實作 · 自動化工程 · 全端建置</p>
+
+        <div class="proj-timeline">
+          {{ range . }}
+          <div class="proj-item">
+
+            {{/* 左側時間軸 */}}
+            <div class="proj-axis">
+              <div class="proj-dot{{ if .private }} proj-dot--private{{ end }}"></div>
+              <div class="proj-line"></div>
+            </div>
+
+            {{/* 右側卡片 */}}
+            <div class="proj-card">
+              <div class="proj-meta">
+                {{ with .date }}<span class="proj-date">{{ . }}</span>{{ end }}
+                {{ if .private }}<span class="proj-badge">🔒 Private</span>{{ end }}
+                {{ if .url }}<a href="{{ .url }}" target="_blank" rel="noopener" class="proj-ext-link">↗ 查看</a>{{ end }}
+              </div>
+
+              <p class="proj-name">{{ .name }}</p>
+              <p class="proj-desc">{{ .desc }}</p>
+
+              {{ with .tags }}
+              <div class="proj-tags">
+                {{ range . }}<span class="proj-tag">{{ . }}</span>{{ end }}
+              </div>
+              {{ end }}
+            </div>
+
           </div>
           {{ end }}
+          <div class="proj-end-dot"></div>
         </div>
-        {{ end }}
-      </section>
-      {{ end }}
-
-      {{ with .Site.Params.awards }}
-      <section class="resume-section" id="awards">
-        <h2 class="section-title">獎項 Awards</h2>
-        {{ range . }}
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <span class="timeline-date">{{ .date }}</span>
-            <h3>{{ .name }}</h3>
-            {{ with .org }}<p class="timeline-sub">{{ . }}</p>{{ end }}
-          </div>
-        </div>
-        {{ end }}
       </section>
       {{ end }}
 
     </div>{{/* end resume-right */}}
   </div>{{/* end resume-body */}}
+
 </div>{{/* end resume-container */}}
 {{- end }}
