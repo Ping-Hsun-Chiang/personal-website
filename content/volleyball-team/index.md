@@ -18,8 +18,8 @@ type: "volleyball-team"
 - 參賽人員：姜秉勳、許博凱、蔡行揚、游佳臻、張庭雯、王冠茵、辜瀞儀、謝昀倢
 
 <div class="vb-2col">
-  <img src="/volleyball_team/2026超大盃_頒獎.jpg">
-  <img src="/volleyball_team/2026超大盃_擊掌.jpg">
+  <img src="../volleyball_team/2026超大盃_頒獎.jpg">
+  <img src="../volleyball_team/2026超大盃_擊掌.jpg">
 </div>
 
 ---

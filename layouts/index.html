@@ -5,7 +5,7 @@
   <section class="resume-hero">
     <div class="hero-avatar">
       {{ if .Site.Params.profileMode.imageUrl }}
-      <img src="{{ .Site.Params.profileMode.imageUrl }}" alt="avatar" width="120" height="120">
+      <img src="{{ .Site.Params.profileMode.imageUrl | absURL }}" alt="avatar" width="120" height="120">
       {{ else }}
       <div class="avatar-placeholder"><span>PHC</span></div>
       {{ end }}

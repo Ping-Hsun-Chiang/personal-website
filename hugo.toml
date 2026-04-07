@@ -36,7 +36,7 @@ url = 'https://github.com/Ping-Hsun-Chiang'
 
 [[params.profileMode.buttons]]
 name = 'LinkedIn ↗'
-url = 'https://www.linkedin.com/in/andrew-chiang-a99a94321/edit/intro'
+url = 'https://www.linkedin.com/in/andrew-chiang-a99a94321/'
 
 
 [[params.skills]]
