@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Ping-Hsun Chiang on Ping-Hsun Chiang | AI Engineer</title>
-    <link>http://localhost:62430/personal-website/</link>
+    <link>http://localhost:1313/personal-website/</link>
     <description>Recent content in Ping-Hsun Chiang on Ping-Hsun Chiang | AI Engineer</description>
     <generator>Hugo -- 0.157.0</generator>
     <language>zh-tw</language>
-    <atom:link href="http://localhost:62430/personal-website/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/personal-website/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>鞋槓青年</title>
-      <link>http://localhost:62430/personal-website/volleyball-team/</link>
+      <link>http://localhost:1313/personal-website/volleyball-team/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:62430/personal-website/volleyball-team/</guid>
+      <guid>http://localhost:1313/personal-website/volleyball-team/</guid>
       <description>&lt;h2 id=&#34;關於球隊&#34;&gt;關於球隊&lt;/h2&gt;
 &lt;p&gt;楊克武&lt;/p&gt;
 &lt;hr&gt;
@@ -32,7 +32,7 @@
 &lt;li&gt;賽果：公開男子組 - 八強&lt;/li&gt;
 &lt;li&gt;參賽人員：姜秉勳、謝昱陞、邱明鋒、曾聖倫、楊克武、吳柄承、曾瑋群&lt;/li&gt;
 &lt;/ul&gt;
-&lt;img src=&#34;http://localhost:62430/personal-website/volleyball_team/2025奇萊盃_合照.jpg&#34; style=&#34;width: 80%; max-width: 700px; display: block; margin: 0 auto;&#34;&gt;
+&lt;img src=&#34;http://localhost:1313/personal-website/volleyball_team/2025奇萊盃_合照.jpg&#34; style=&#34;width: 80%; max-width: 700px; display: block; margin: 0 auto;&#34;&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;2025-南天宮金媽祖盃-in-羅東國中&#34;&gt;2025 南天宮金媽祖盃 in 羅東國中&lt;/h2&gt;
 &lt;ul&gt;
@@ -40,7 +40,7 @@
 &lt;li&gt;賽果：社會男子組 - 亞軍 🥈&lt;/li&gt;
 &lt;li&gt;參賽人員：姜秉勳、曾聖倫、湯皓翔、李淯紘、李浩然、鄭宇恩、周子宸、陳子帆、潘星辰、蔡行揚、楊克武、藍翊愷&lt;/li&gt;
 &lt;/ul&gt;
-&lt;img src=&#34;http://localhost:62430/personal-website/volleyball_team/2025金媽祖盃_合照.jpg&#34; style=&#34;width: 80%; max-width: 700px; display: block; margin: 0 auto;&#34;&gt;
+&lt;img src=&#34;http://localhost:1313/personal-website/volleyball_team/2025金媽祖盃_合照.jpg&#34; style=&#34;width: 80%; max-width: 700px; display: block; margin: 0 auto;&#34;&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;2025-羅東主委盃-in-宜蘭大學&#34;&gt;2025 羅東主委盃 in 宜蘭大學&lt;/h2&gt;
 &lt;ul&gt;
@@ -48,31 +48,31 @@
 &lt;li&gt;賽果：社會男子組 - 殿軍&lt;/li&gt;
 &lt;li&gt;參賽人員：姜秉勳、魏冠杰、蔡宗岳、詹詠鈞、朱凱逸、湯皓翔、張顥耀、范廷育、陳泰鋐&lt;/li&gt;
 &lt;/ul&gt;
-&lt;img src=&#34;http://localhost:62430/personal-website/volleyball_team/2025羅東主委盃_合照.jpg&#34; style=&#34;width: 80%; max-width: 700px; display: block; margin: 0 auto;&#34;&gt;
+&lt;img src=&#34;http://localhost:1313/personal-website/volleyball_team/2025羅東主委盃_合照.jpg&#34; style=&#34;width: 80%; max-width: 700px; display: block; margin: 0 auto;&#34;&gt;
 &lt;hr&gt;
 &lt;!-- 
 單張大圖 
-&lt;img src=&#34;http://localhost:62430/personal-website/volleyball_team/photo.jpg&#34; alt=&#34;描述&#34;&gt;
+&lt;img src=&#34;http://localhost:1313/personal-website/volleyball_team/photo.jpg&#34; alt=&#34;描述&#34;&gt;
 
 兩張並排
 &lt;div class=&#34;vb-2col&#34;&gt;
-  &lt;img src=&#34;http://localhost:62430/personal-website/volleyball_team/photo1.jpg&#34; alt=&#34;&#34;&gt;
-  &lt;img src=&#34;http://localhost:62430/personal-website/volleyball_team/photo2.jpg&#34; alt=&#34;&#34;&gt;
+  &lt;img src=&#34;http://localhost:1313/personal-website/volleyball_team/photo1.jpg&#34; alt=&#34;&#34;&gt;
+  &lt;img src=&#34;http://localhost:1313/personal-website/volleyball_team/photo2.jpg&#34; alt=&#34;&#34;&gt;
 &lt;/div&gt;
 
 三張並排
 &lt;div class=&#34;vb-3col&#34;&gt;
-  &lt;img src=&#34;http://localhost:62430/personal-website/volleyball_team/photo1.jpg&#34; alt=&#34;&#34;&gt;
-  &lt;img src=&#34;http://localhost:62430/personal-website/volleyball_team/photo2.jpg&#34; alt=&#34;&#34;&gt;
-  &lt;img src=&#34;http://localhost:62430/personal-website/volleyball_team/photo3.jpg&#34; alt=&#34;&#34;&gt;
+  &lt;img src=&#34;http://localhost:1313/personal-website/volleyball_team/photo1.jpg&#34; alt=&#34;&#34;&gt;
+  &lt;img src=&#34;http://localhost:1313/personal-website/volleyball_team/photo2.jpg&#34; alt=&#34;&#34;&gt;
+  &lt;img src=&#34;http://localhost:1313/personal-website/volleyball_team/photo3.jpg&#34; alt=&#34;&#34;&gt;
 &lt;/div&gt;
 
 一大兩小
 &lt;div class=&#34;vb-1-2&#34;&gt;
-  &lt;img src=&#34;http://localhost:62430/personal-website/volleyball_team/main.jpg&#34; alt=&#34;&#34;&gt;
+  &lt;img src=&#34;http://localhost:1313/personal-website/volleyball_team/main.jpg&#34; alt=&#34;&#34;&gt;
   &lt;div class=&#34;vb-1-2-right&#34;&gt;
-    &lt;img src=&#34;http://localhost:62430/personal-website/volleyball_team/photo2.jpg&#34; alt=&#34;&#34;&gt;
-    &lt;img src=&#34;http://localhost:62430/personal-website/volleyball_team/photo3.jpg&#34; alt=&#34;&#34;&gt;
+    &lt;img src=&#34;http://localhost:1313/personal-website/volleyball_team/photo2.jpg&#34; alt=&#34;&#34;&gt;
+    &lt;img src=&#34;http://localhost:1313/personal-website/volleyball_team/photo3.jpg&#34; alt=&#34;&#34;&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 --&gt;</description>
