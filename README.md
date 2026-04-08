@@ -49,5 +49,5 @@
 - **GitHub Pages**（靜態網站托管）
 
 ## Author
-**Ping-Hsun Chiang（姜秉勳）**  
+**Ping-Hsun Chiang**  
 GitHub: [Ping-Hsun-Chiang](https://github.com/Ping-Hsun-Chiang)  
