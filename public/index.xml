@@ -8,6 +8,23 @@
     <language>zh-tw</language>
     <atom:link href="http://localhost:1313/personal-website/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>面試經歷</title>
+      <link>http://localhost:1313/personal-website/interviews/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/personal-website/interviews/</guid>
+      <description>&lt;h2 id=&#34;2026-某某公司&#34;&gt;2026 某某公司&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;職位&lt;/strong&gt;：資料科學家&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;時間&lt;/strong&gt;：2026.03&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;流程&lt;/strong&gt;：一面（技術）→ 二面（主管）→ Offer&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;題目&lt;/strong&gt;：空間統計相關問題、Python coding test&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;心得&lt;/strong&gt;：&amp;hellip;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;2026-某某公司-1&#34;&gt;2026 某某公司&lt;/h2&gt;
+&lt;p&gt;&amp;hellip;&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>鞋槓青年</title>
       <link>http://localhost:1313/personal-website/volleyball-team/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

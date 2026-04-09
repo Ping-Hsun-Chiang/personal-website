@@ -8,6 +8,10 @@
   </url><url>
     <loc>http://localhost:1313/personal-website/tags/</loc>
   </url><url>
+    <loc>http://localhost:1313/personal-website/posts/</loc>
+  </url><url>
+    <loc>http://localhost:1313/personal-website/interviews/</loc>
+  </url><url>
     <loc>http://localhost:1313/personal-website/volleyball-team/</loc>
   </url>
 </urlset>

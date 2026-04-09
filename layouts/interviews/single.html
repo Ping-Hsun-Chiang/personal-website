@@ -1,0 +1,58 @@
+{{ define "main" }}
+<div class="interview-gate" id="interviewGate">
+  <div class="gate-box">
+    <div class="gate-icon">🔒</div>
+    <h2>面試經歷</h2>
+    <p>此頁面需要密碼才能查看</p>
+    <div class="gate-input-row">
+      <input
+        type="password"
+        id="pwdInput"
+        class="gate-input"
+        placeholder="請輸入密碼"
+        autocomplete="current-password"
+      >
+      <button class="gate-btn" id="pwdSubmit">進入</button>
+    </div>
+    <p class="gate-error" id="gateError"></p>
+  </div>
+</div>
+
+<div class="interview-content" id="interviewContent" style="display:none;">
+  {{ .Content }}
+</div>
+
+<script>
+(function() {
+  // ★ 在這裡設定你的密碼（可以之後改）
+  var PASSWORD = "your-secret-password";
+
+  var SESSION_KEY = "interview_unlocked";
+
+  function unlock() {
+    sessionStorage.setItem(SESSION_KEY, "1");
+    document.getElementById('interviewGate').style.display = 'none';
+    document.getElementById('interviewContent').style.display = 'block';
+  }
+
+  // 本次 session 已解鎖
+  if (sessionStorage.getItem(SESSION_KEY) === "1") {
+    unlock();
+    return;
+  }
+
+  document.getElementById('pwdSubmit').addEventListener('click', function() {
+    var val = document.getElementById('pwdInput').value;
+    if (val === PASSWORD) {
+      unlock();
+    } else {
+      document.getElementById('gateError').textContent = '密碼錯誤，請再試一次';
+    }
+  });
+
+  document.getElementById('pwdInput').addEventListener('keydown', function(e) {
+    if (e.key === 'Enter') document.getElementById('pwdSubmit').click();
+  });
+})();
+</script>
+{{ end }}
