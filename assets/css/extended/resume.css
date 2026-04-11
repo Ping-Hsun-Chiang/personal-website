@@ -335,8 +335,6 @@
 }
 
 
-.page-header,
-.post-header,
 body > main,
 .main,
 body .main,
@@ -1067,4 +1065,31 @@ body.sidebar-open {
   font-size: 0.875rem;
   margin-top: 0.75rem;
   min-height: 1.2em;
+}
+
+
+/* 文章列表頁 & 單篇文章頁：限制寬度並置中 */
+.post-entry,
+.page-header,
+.post-header,
+.post-content,
+.toc,
+.post-footer {
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main.main {
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1.5rem;
+}
+
+.list .page-header {
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
 }

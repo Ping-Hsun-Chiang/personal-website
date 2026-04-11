@@ -9,11 +9,38 @@
     <lastBuildDate>Fri, 10 Apr 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/personal-website/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>我的第一篇文章</title>
-      <link>http://localhost:1313/personal-website/posts/1/</link>
+      <title>Golang Programming Learning Journey</title>
+      <link>http://localhost:1313/personal-website/posts/golang_learning/</link>
       <pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/personal-website/posts/1/</guid>
-      <description>&lt;p&gt;這裡寫文章內容，支援 Markdown 語法。&lt;/p&gt;</description>
+      <guid>http://localhost:1313/personal-website/posts/golang_learning/</guid>
+      <description>&lt;h2 id=&#34;背景與開發環境&#34;&gt;背景與開發環境&lt;/h2&gt;
+&lt;p&gt;因為手邊目前僅有一台老舊的 Acer 筆電，為了在硬體資源受限的情況下維持高效的開發節奏，我採用了「在 WSL (Linux) 環境中撰寫程式碼，並編譯為 Windows 原生執行檔」的開發策略。&lt;/p&gt;
+&lt;p&gt;這種方式讓我既能享受 Linux 強大且靈活的終端機與開發工具鏈（如 Git, Docker），又能直接在 Windows 主機上測試最終產物。&lt;/p&gt;
+&lt;p&gt;以下是我建立第一個 Go 語言 2D 遊戲（使用 Ebitengine）的環境建置與測試過程記錄。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;step-1-在-wsl-安裝-golang-環境&#34;&gt;Step 1: 在 WSL 安裝 Golang 環境&lt;/h2&gt;
+&lt;p&gt;首先，在 WSL 的終端機中下載並安裝 Go 1.22.2 版本，並設定環境變數。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# 下載 Go 安裝包&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;wget &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;https://go.dev/dl/go1.22.2.linux-amd64.tar.gz&lt;span style=&#34;color:#f92672&#34;&gt;](&lt;/span&gt;https://go.dev/dl/go1.22.2.linux-amd64.tar.gz&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# 移除舊版本並解壓縮新版本至 /usr/local&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo rm -rf /usr/local/go &lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; sudo tar -C /usr/local -xzf go1.22.2.linux-amd64.tar.gz
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# 清理安裝包&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;rm go1.22.2.linux-amd64.tar.gz
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# 將 Go 路徑加入環境變數&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;export PATH=$PATH:/usr/local/go/bin&amp;#39;&lt;/span&gt; &amp;gt;&amp;gt; ~/.bashrc
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;export GOPATH=$HOME/go&amp;#39;&lt;/span&gt; &amp;gt;&amp;gt; ~/.bashrc
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# 重新載入設定&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;source ~/.bashrc
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# 驗證安裝結果&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;go version
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# 預期輸出: go version go1.22.2 linux/amd64&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;step-2-建立專案與初始化模組&#34;&gt;Step 2: 建立專案與初始化模組&lt;/h2&gt;
+&lt;p&gt;建立遊戲專案目錄，初始化 Git 數據庫與 Go Modules，並下載開源的 2D 遊戲引擎 Ebitengine。&lt;/p&gt;</description>
     </item>
     <item>
       <title>面試經歷</title>

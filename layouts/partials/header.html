@@ -1,17 +1,13 @@
 <header class="header">
   <nav class="nav">
     <div class="logo">
-      {{- $label_text := (site.Params.label.text | default site.Title) }}
-      {{- if site.Title }}
-      <a href="{{ "" | absLangURL }}" accesskey="h" title="{{ $label_text }} (Alt + H)">
-        {{- if site.Params.label.icon }}
-        {{- $img := resources.Get site.Params.label.icon }}
-        {{- if $img }}
-          {{- $img = $img.Process "resize 30x" }}
-          <img src="{{ $img.Permalink }}" alt="" aria-hidden="true">
-        {{- end }}
-        {{- end }}
-        <span>{{ $label_text }}</span>
+      {{- if .IsHome }}
+      <a href="{{ "" | absLangURL }}" accesskey="h" title="{{ site.Title }} (Alt + H)">
+        <span>{{ site.Title }}</span>
+      </a>
+      {{- else }}
+      <a href="{{ "" | absLangURL }}" accesskey="h" title="Back to Home (Alt + H)">
+        <span>← Back to Home</span>
       </a>
       {{- end }}
     </div>

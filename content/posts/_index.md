@@ -1,4 +1,3 @@
 ---
-title: "文章"
-description: "我的文章"
+title: "My Posts"
 ---
