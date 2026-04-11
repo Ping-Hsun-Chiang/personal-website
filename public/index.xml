@@ -6,7 +6,15 @@
     <description>Recent content in Ping-Hsun Chiang on Welcome To My World</description>
     <generator>Hugo -- 0.157.0</generator>
     <language>zh-tw</language>
+    <lastBuildDate>Fri, 10 Apr 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/personal-website/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>我的第一篇文章</title>
+      <link>http://localhost:1313/personal-website/posts/1/</link>
+      <pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/personal-website/posts/1/</guid>
+      <description>&lt;p&gt;這裡寫文章內容，支援 Markdown 語法。&lt;/p&gt;</description>
+    </item>
     <item>
       <title>面試經歷</title>
       <link>http://localhost:1313/personal-website/interviews/</link>
