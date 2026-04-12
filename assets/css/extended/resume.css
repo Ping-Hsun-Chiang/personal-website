@@ -1093,3 +1093,10 @@ main.main {
   margin-right: auto;
   padding-left: 1.5rem;
 }
+
+.interview-body {
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1.5rem;
+}
