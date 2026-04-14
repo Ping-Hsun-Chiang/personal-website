@@ -1100,3 +1100,58 @@ main.main {
   margin-right: auto;
   padding: 0 1.5rem;
 }
+
+/* ── Interview Cards ────────────────────────────────────────── */
+.iv-card {
+  background: var(--entry);
+  border: 1px solid var(--resume-border);
+  border-radius: var(--resume-radius);
+  border-left: 4px solid var(--resume-accent);
+  padding: 1.5rem 1.75rem;
+  margin-bottom: 1.25rem;
+  transition: box-shadow 0.2s;
+}
+
+.iv-card:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.iv-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 1rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--resume-border);
+}
+
+.iv-company {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.iv-location {
+  font-size: 0.85rem;
+  color: var(--resume-text-muted);
+}
+
+.iv-card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+.iv-row {
+  display: grid;
+  grid-template-columns: 90px 1fr;
+  gap: 0.5rem;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.iv-label {
+  color: var(--resume-text-muted);
+  font-weight: 500;
+  flex-shrink: 0;
+}
