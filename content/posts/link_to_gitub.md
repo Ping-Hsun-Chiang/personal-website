@@ -41,7 +41,7 @@ git branch -M main
 git remote add origin <>
 ```
 
-## Step 6: Remote 端有檔案 (e.g., README, LICENSE)
+## Step 6: Remote 端有檔案 (e.g., README, LICENSE...)
 
 ```bash
 git pull origin main --allow-unrelated-histories
