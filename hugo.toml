@@ -119,6 +119,13 @@ desc = '蒐集花東地區公共運輸資料，運用 R 語言進行統計分析
 # ── Projects ──────────────────────────────────────────────────
 [[params.projects]]
 date = '2026.04'
+name = '老虎機機率模型 | Game Probability Model'
+desc = '以數學建模為核心，設計一套 RTP = 95%、高波動性（σ ≈ 7.77）的老虎機遊戲數學模型。從賠付表設計、Variance 推導、Hit Frequency 計算出發，並以 Python 對 10,000 位玩家進行蒙地卡羅模擬，驗證理論 RTP 與模擬結果誤差小於 0.01%。產出五張視覺化圖表，涵蓋玩家體驗曲線、公司 P&L、RTP 收斂分析，完整呈現遊戲數學設計與風控邏輯。'
+url = 'https://github.com/Ping-Hsun-Chiang/game-probability-model'
+tags = ['Python', 'Monte Carlo', 'Probability', 'Game', 'Probability Model']
+
+[[params.projects]]
+date = '2026.04'
 name = '二十一點遊戲 | Blackjack'
 desc = '本專案使用 Go 語言搭配 Ebitengine 2D 遊戲引擎，獨立開發一款桌面版二十一點 (Blackjack) 遊戲。採用 5 副牌組並以 Fisher-Yates 演算法實現公平洗牌，確保每局隨機性。遊戲邏輯完整實作了國際規則、完整操作流程，以及勝負結算。程式架構上將牌組管理 (deck.go)、遊戲狀態機與渲染邏輯 (game.go) 明確分離，並以隔離的亂數來源避免全域狀態污染。此專案展現了我運用 Go 語言進行遊戲開發的能力，以及對狀態機設計、演算法實作與程式碼結構化的掌握。'
 url = 'https://github.com/Ping-Hsun-Chiang/game-blackjack'
