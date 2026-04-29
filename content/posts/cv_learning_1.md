@@ -1,6 +1,6 @@
 ---
 title: "基礎影像辨識 學習紀錄 (Part 1)"
-date: 2026-04-29
+date: 2026-04-28
 draft: false
 ---
 
