@@ -1155,3 +1155,134 @@ main.main {
   font-weight: 500;
   flex-shrink: 0;
 }
+
+
+/* ── Git Tutorial Split Layout ─────────────────────────────────── */
+.git-split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+.git-col-card {
+  border: 1px solid var(--resume-border);
+  border-radius: var(--resume-radius);
+  overflow: hidden;
+}
+.git-col-header {
+  padding: 0.65rem 1rem;
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-align: center;
+  background: #111827;
+  color: #fff;
+  letter-spacing: 0.03em;
+}
+.dark .git-col-header {
+  background: var(--resume-accent);
+}
+.git-col-body {
+  padding: 0.4rem 0.9rem 0.5rem;
+}
+.git-step {
+  display: flex;
+  gap: 0.65rem;
+  align-items: flex-start;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid var(--resume-border);
+}
+.git-step:last-child {
+  border-bottom: none;
+  padding-bottom: 0.2rem;
+}
+.git-step-num {
+  min-width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--resume-accent);
+  color: #fff;
+  font-size: 0.69rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+.git-step > div {
+  min-width: 0;
+  flex: 1;
+}
+.git-step-title {
+  font-size: 0.84rem;
+  font-weight: 600;
+  margin: 0 0 0.3rem;
+  color: var(--primary);
+}
+.git-step-note {
+  font-size: 0.75rem;
+  color: var(--resume-text-muted);
+  margin: 0.3rem 0 0;
+  line-height: 1.5;
+}
+.git-step pre {
+  margin: 0 !important;
+  font-size: 0.76rem !important;
+  background: #1e2230 !important;
+  color: #cdd6f4 !important;
+  border-radius: 6px !important;
+  padding: 0.5rem 0.75rem !important;
+  overflow-x: auto;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255,255,255,0.15) transparent;
+}
+.git-step pre::-webkit-scrollbar {
+  height: 3px;
+}
+.git-step pre::-webkit-scrollbar-track {
+  background: transparent;
+}
+.git-step pre::-webkit-scrollbar-thumb {
+  background: rgba(255,255,255,0.18);
+  border-radius: 3px;
+}
+.git-step pre > code {
+  font-size: 0.76rem !important;
+  background: none !important;
+  padding: 0 !important;
+  color: inherit !important;
+}
+.git-code-wrap {
+  position: relative;
+}
+.git-copy-btn {
+  position: absolute;
+  top: 0.3rem;
+  right: 0.3rem;
+  padding: 1px 6px;
+  font-size: 0.62rem;
+  font-family: var(--resume-font-mono);
+  background: rgba(255,255,255,0.08);
+  color: rgba(255,255,255,0.45);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 3px;
+  cursor: pointer;
+  line-height: 1.7;
+  user-select: none;
+  transition: background 0.15s, color 0.15s, border-color 0.15s;
+}
+.git-copy-btn:hover {
+  background: rgba(255,255,255,0.18);
+  color: #fff;
+  border-color: rgba(255,255,255,0.3);
+}
+.git-copy-btn.copied {
+  background: rgba(34,197,94,0.18);
+  color: #4ade80;
+  border-color: rgba(34,197,94,0.3);
+}
+@media (max-width: 640px) {
+  .git-split {
+    grid-template-columns: 1fr;
+  }
+}

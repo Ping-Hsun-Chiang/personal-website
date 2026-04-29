@@ -1,0 +1,27 @@
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  document.querySelectorAll('.git-step pre').forEach(function (pre) {
+    var wrap = document.createElement('div');
+    wrap.className = 'git-code-wrap';
+    pre.parentNode.insertBefore(wrap, pre);
+    wrap.appendChild(pre);
+
+    var btn = document.createElement('button');
+    btn.className = 'git-copy-btn';
+    btn.textContent = 'copy';
+    wrap.appendChild(btn);
+
+    btn.addEventListener('click', function () {
+      var text = (pre.querySelector('code') || pre).innerText;
+      navigator.clipboard.writeText(text).then(function () {
+        btn.textContent = '✓';
+        btn.classList.add('copied');
+        setTimeout(function () {
+          btn.textContent = 'copy';
+          btn.classList.remove('copied');
+        }, 1500);
+      });
+    });
+  });
+});
+</script>
