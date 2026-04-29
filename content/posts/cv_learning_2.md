@@ -59,4 +59,4 @@ draft: false
 
 ---
 
-> 相關實作程式碼請參閱 Github：[Example 2](https://github.com/Ping-Hsun-Chiang/CV-learning/tree/main/ex02_mnist)
+> 相關實作程式碼請參閱 Github：[Example 2](https://github.com/Ping-Hsun-Chiang/CV-learning/tree/main/ex02_mnist_classify)
